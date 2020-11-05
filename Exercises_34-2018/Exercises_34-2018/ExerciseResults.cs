@@ -12,7 +12,7 @@ namespace Exercises_34_2018
         StudentIndex = studentIndex;
         Points = points;
     }
-    {
+    
     
 
         public int Id { get; set; }
@@ -21,6 +21,10 @@ namespace Exercises_34_2018
         public string StudentIndex { get; set; }
 
         public int Points { get; set; }
+        public override string ToString()
+        {
+            return "Id: " + Id + " Student: " + StudentName + " Index: " + StudentIndex + " Points: " + Points;
+        }
     }
 
 
